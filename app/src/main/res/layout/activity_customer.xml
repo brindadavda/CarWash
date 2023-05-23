@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="24dp"
+    android:background="@color/back_color_60"
+    tools:context=".CustomerActivity">
+
+    <ImageView
+        android:id="@+id/logoutIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/logout"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book a Car Wash"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        android:layout_marginVertical="16dp"
+        android:layout_below="@id/logoutIv"/>
+
+    <TextView
+        android:id="@+id/availability_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available times:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/title"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <RadioGroup
+        android:id="@+id/availability_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availability_text"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp">
+
+        <RadioButton
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM - 11:00 AM"/>
+
+        <RadioButton
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00 AM - 12:00 PM"/>
+
+        <RadioButton
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 PM - 01:00 PM"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/book_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availability_radiogroup"
+        android:backgroundTint="@color/teal_700"
+        android:text="Book Now"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/chatOwnerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Chat with Owner" />
+
+    <Button
+        android:id="@+id/chatEmployeeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chatOwnerBtn"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Chat with Employee" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DoorCarWash</string>
+
+    <string-array name="wash_types_array">
+        <item>Basic Wash</item>
+        <item>Deluxe Wash</item>
+        <item>Premium Wash</item>
+    </string-array>
+
+    <array name="select_user_array">
+        <item>Admin</item>
+        <item>Customer</item>
+        <item>Employee</item>
+        <item>Owner</item>
+    </array>
+</resources>

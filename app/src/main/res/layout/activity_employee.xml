@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/back_color_60"
+    tools:context=".EmployeeActivity">
+
+    <ImageView
+        android:id="@+id/logoutIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/logout"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your availability date and time"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:datePickerMode="spinner"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"/>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:timePickerMode="spinner"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Availability"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="confirmAvailability" />
+
+    <Button
+        android:id="@+id/chatCustomerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat With Customer"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="chatCustomer" />
+
+
+
+</LinearLayout>
